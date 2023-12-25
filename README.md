@@ -10,6 +10,13 @@ A simple real-time chat application built with Django, Channels, Daphne, and Jav
 - **Responsive Design:** A clean and responsive user interface for a seamless chat experience.
 - **Session Management:** Uses Django sessions to manage user sessions and persist usernames.
 
+## Screenshot
+
+<div style="display: flex; justify-content: space-between;">
+    <img src="images/image1.png" alt="Image 1" style="width: 48%; max-width: 100%;">
+    <img src="images/image2.png" alt="Image 2" style="width: 48%; max-width: 100%;">
+</div>
+
 ## Getting Started
 
 ### Prerequisites
