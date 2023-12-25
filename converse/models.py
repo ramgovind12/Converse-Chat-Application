@@ -6,7 +6,7 @@ class Author(models.Model):
     
 class Message(models.Model):
     author = models.ForeignKey(Author,on_delete = models.CASCADE)
-    message = models.TextField()
+    content = models.TextField()
     created_at = models.DateTimeField(auto_now_add = True)
     
     

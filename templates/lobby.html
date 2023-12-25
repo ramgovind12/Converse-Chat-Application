@@ -3,13 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lobby</title>
-</head>
-<body>
-
+    <title>Sign-in Page</title>
     <style>
-        body{
-            font-family: 'Helvetica Nue', sans-serif;
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -19,36 +16,35 @@
             color: #333;
         }
 
-        .sign-in-container{
+        .sign-in-container {
             background: #ffffff;
             padding: 40px 50px;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             width: 300px;
         }
 
-        .sign-in-container h2{
+        .sign-in-container h2 {
             text-align: center;
             margin-bottom: 30px;
             font-size: 24px;
             color: #0a3d62;
         }
 
-        .sign-in-container form{
+        .sign-in-container form {
             display: flex;
             flex-direction: column;
         }
 
-        .sign-in-container input{
+        .sign-in-container input {
             margin-bottom: 15px;
             padding: 15px;
             border: 1px solid #ced6e0;
             border-radius: 6px;
             font-size: 16px;
-            transition: background-color 0.3s;
         }
 
-        .sign-in-container button{
+        .sign-in-container button {
             padding: 15px;
             background-color: #2ecc71;
             color: white;
@@ -56,19 +52,21 @@
             border-radius: 6px;
             cursor: pointer;
             font-size: 16px;
+            transition: background-color 0.3s;
         }
 
-        .sign-in-container button:hover{
+        .sign-in-container button:hover {
             background-color: #27ae60;
         }
     </style>
-
+</head>
+<body>
     <div class="sign-in-container">
-        <h2>Enter Your Chat Name: </h2>
-        <form action="" method="post">
+        <h2>Enter your chat name:</h2>
+        <form method="post">
             {% csrf_token %}
             <input type="text" name="username" placeholder="Username" required>
-            <button type="submit">Join Chat</button>
+            <button type="submit">Join the chat</button>
         </form>
     </div>
 </body>
